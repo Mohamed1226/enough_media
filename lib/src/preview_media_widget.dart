@@ -142,7 +142,7 @@ class PreviewMediaWidget extends StatelessWidget {
   void _showInteractiveDelegate() {
     final interactive = InteractiveMediaWidget(
       mediaProvider: mediaProvider,
-      heroTag: mediaProvider,
+      heroTag:useHeroAnimation ? mediaProvider : null,
       builder: interactiveBuilder,
       fallbackBuilder: interactiveFallbackBuilder,
     );
